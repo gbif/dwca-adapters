@@ -29,6 +29,7 @@ PHP scripts to generate dwc checklist archives for various sources
 3) Type "php index.php {source}".
 
 ### Setting up cronjob to execute source generation:
+```
 ========================================================================
 .---------------- minute (0 - 59) 
 |  .------------- hour (0 - 23)
@@ -38,6 +39,7 @@ PHP scripts to generate dwc checklist archives for various sources
 |  |  |  |  |
 *  *  *  *  *  php /{path_to_script}/index.php {source}
 ========================================================================
+```
 
 ### MySql Setup:
 To be able to use itis and col you must be runnign a mysql database.
