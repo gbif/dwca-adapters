@@ -9,14 +9,14 @@ PHP scripts to generate dwc checklist archives for various sources
 - MySQL (Optional for 2 Sources)
 
 # Sources:
-0) all - All sources 1-6 below
 
-1) usda - USDA Plants
-2) tol - Tree Of Life
-3) ncbi - NCBI
-4) grin - GRIN   // Needs a Mysql Database (see MySql setup below)
-5) itis - ITIS
-6) col - Catalogue of Life
+0. all - All sources 1-6 below
+1. usda - USDA Plants
+2. tol - Tree Of Life
+3. ncbi - NCBI
+4. grin - GRIN   // Needs a Mysql Database (see MySql setup below)
+5. itis - ITIS
+6. col - Catalogue of Life
 
 # Configuration:
 1) Copy the default.config.php to config.php and edit the information.
@@ -24,9 +24,10 @@ PHP scripts to generate dwc checklist archives for various sources
 # Using DwC-Adapters 
 
 ### via command line:
-1) Go to shell program.
-2) Go to the main folder for this project.
-3) Type "php index.php {source}".
+
+1. Go to shell program.
+2. Go to the main folder for this project.
+3. Type "php index.php {source}".
 
 ### Setting up cronjob to execute source generation:
 ```
@@ -43,7 +44,8 @@ PHP scripts to generate dwc checklist archives for various sources
 
 ### MySql Setup:
 To be able to use itis and col you must be runnign a mysql database.
-1) Create 2 databases like itis & col.
-2) Create a user that has full permissions for these 2 databases.
-3) Edit the config.php file and add in the db connection information.
-4) Run the 2 sql files to build the table structure.
+
+1. Create 2 databases like itis & col.
+2. Create a user that has full permissions for these 2 databases.
+3. Edit the config.php file and add in the db connection information.
+4. Run the 2 sql files to build the table structure.
