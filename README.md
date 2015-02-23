@@ -1,6 +1,5 @@
 # DwC-Adapters
-Created: 2010
-Created By: Michael Giddens (mikegiddens@silverbiology.com)
+Created: 2010 by Michael Giddens (mikegiddens@silverbiology.com)
 
 PHP scripts to generate dwc checklist archives for various sources
 
