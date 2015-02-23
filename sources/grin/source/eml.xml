@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<eml:eml packageId="david_remsen.12.1" system="knb" xmlns:eml="eml://ecoinformatics.org/eml-2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 eml.xsd"> <access authSystem="knb" order="allowFirst"> <allow><principal>public</principal>
+<permission>read</permission>
+</allow>
+</access>
+ <dataset> <title>GRIN Taxonomy</title>
+ <creator id="1267103275124"> <individualName><salutation>Dr.</salutation>
+<givenName>John H.</givenName>
+<surName>Wiersema</surName>
+</individualName>
+<organizationName>National Germplasm Resources Laboratory (NGRL)</organizationName>
+<onlineUrl>http://www.ars-grin.gov/cgi-bin/npgs/html/index.pl</onlineUrl>
+</creator>
+ <associatedParty id="1264777976227"><individualName><salutation>Mr.</salutation>
+<givenName>David</givenName>
+<surName>Remsen</surName>
+</individualName>
+<organizationName>GBIF Secretariat</organizationName>
+<positionName>Programme Officer</positionName>
+<address><deliveryPoint>GBIF Secretariat</deliveryPoint>
+<deliveryPoint>Universitetsparken 15</deliveryPoint>
+<city>Copenhagen</city>
+<administrativeArea>&#216;</administrativeArea>
+<postalCode>2100</postalCode>
+<country>DK</country>
+</address>
+<phone phonetype="voice">+45 28751472</phone>
+<electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
+<onlineUrl>http://www.gbif.org</onlineUrl>
+<role>Metadata Provider</role>
+</associatedParty>
+<pubDate>{pubDate}</pubDate>
+<language>en</language>
+<abstract><para>GRIN taxonomic data provide the structure and nomenclature for accessions of the National Plant Germplasm System (NPGS), part of the National Genetic Resources Program (NGRP) of the United States Department of Agriculture's (USDA's) Agricultural Research Service (ARS). In GRIN Taxonomy for Plants all families and genera of vascular plants and over 46,000 species from throughout the world are represented, especially economic plants and their relatives. Information on scientific and common names, classification, distribution, references, and economic impacts are provided.</para>
+</abstract>
+<keywordSet><keyword>Germplasm</keyword>
+<keyword>Checklist</keyword>
+</keywordSet>
+<intellectualRights><para>The GRIN Taxonomy is public data with free and open access with no restrictions.</para>
+</intellectualRights>
+<contact><references>1267103275124</references>
+</contact>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+		<recordLinkUrl></recordLinkUrl>
+		<logoUrl></logoUrl>
+    </metadata>
+</additionalMetadata>
+
+ </eml:eml>

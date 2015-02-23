@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/">
+	<core encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
+		<files>
+			<location>grin_taxa.txt</location>
+		</files>
+		<id index="0"/>
+		<field index="1" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
+		<field index="2" term="http://rs.tdwg.org/dwc/terms/scientificNameAuthorship"/>
+		<field index="3" term="http://rs.tdwg.org/dwc/terms/taxonRank"/>
+		<field index="4" term="http://rs.tdwg.org/dwc/terms/acceptedNameUsageID"/>
+		<field index="5" term="http://rs.tdwg.org/dwc/terms/parentNameUsageID"/>		
+		<field index="6" term="http://rs.tdwg.org/dwc/terms/namePublishedIn"/>		
+                <field index="7" term="http://rs.tdwg.org/dwc/terms/taxonRemarks"/>
+                <field default="Plantae" term="http://rs.tdwg.org/dwc/terms/kingdom"/>
+	</core>
+	
+	<extension encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/VernacularName">
+		<files>
+			<location>grin_vernacular.txt</location>
+		</files>
+		<coreid index="1"/>
+		<field index="0" term="http://rs.tdwg.org/dwc/terms/vernacularName"/>
+		<field index="2" term="http://purl.org/dc/terms/language"/>
+	</extension>
+	
+</archive>

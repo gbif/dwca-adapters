@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<eml:eml packageId="david_remsen.14.1" system="knb" xmlns:eml="eml://ecoinformatics.org/eml-2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 eml.xsd"> <access authSystem="knb" order="allowFirst"> <allow><principal>public</principal>
+<permission>read</permission>
+</allow>
+</access>
+ <dataset> <title>Integrated Taxonomic Information System (ITIS)</title>
+ <creator id="1267117611824"> <individualName><salutation>Dr</salutation>
+<givenName>Gerald</givenName>
+<surName>Guala</surName>
+</individualName>
+<organizationName>Integrated Taxonomic Information System</organizationName>
+<positionName>Director</positionName>
+<address><deliveryPoint>Smithsonian Institution</deliveryPoint>
+<deliveryPoint>P.O. Box 37012, NMNH W623 MRC-136</deliveryPoint>
+<city>Washington</city>
+<administrativeArea>DC</administrativeArea>
+<country>20013-7012</country>
+</address>
+<phone phonetype="voice">202-633-2151</phone>
+<onlineUrl>http://www.itis.gov</onlineUrl>
+</creator>
+ <associatedParty id="1264777976227"><individualName><salutation>Mr.</salutation>
+<givenName>David</givenName>
+<surName>Remsen</surName>
+</individualName>
+<organizationName>GBIF Secretariat</organizationName>
+<positionName>Programme Officer</positionName>
+<address><deliveryPoint>GBIF Secretariat</deliveryPoint>
+<deliveryPoint>Universitetsparken 15</deliveryPoint>
+<city>Copenhagen</city>
+<administrativeArea>&#216;</administrativeArea>
+<postalCode>2100</postalCode>
+<country>DK</country>
+</address>
+<phone phonetype="voice">+45 28751472</phone>
+<electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
+<onlineUrl>http://www.gbif.org</onlineUrl>
+<role>Metadata Provider</role>
+</associatedParty>
+<pubDate>{pubDate}</pubDate>
+<language>en</language>
+<abstract><para>
+	The White House Subcommittee on Biodiversity and Ecosystem Dynamics has identified systematics as a research priority that is fundamental to ecosystem management and biodiversity conservation. This primary need identified by the Subcommittee requires improvements in the organization of, and access to, standardized nomenclature. ITIS (originally referred to as the Interagency Taxonomic Information System) was designed to fulfill these requirements. In the future, the ITIS will provide taxonomic data and a directory of taxonomic expertise that will support the system.
+
+	The ITIS is the result of a partnership of federal agencies formed to satisfy their mutual needs for scientifically credible taxonomic information. Since its inception, ITIS has gained valuable new partners and undergone a name change; ITIS now stands for the Integrated Taxonomic Information System.
+
+	The goal is to create an easily accessible database with reliable information on species names and their hierarchical classification. The database will be reviewed periodically to ensure high quality with valid classifications, revisions, and additions of newly described species. The ITIS includes documented taxonomic information of flora and fauna from both aquatic and terrestrial habitats. 
+
+	The original ITIS partners include:
+
+	Department of Commerce
+	National Oceanic and Atmospheric Administration (NOAA)
+	Department of Interior (DOI)
+	Geological Survey (USGS)
+	Environmental Protection Agency (EPA)
+	Department of Agriculture (USDA)
+	Agriculture Research Service (ARS)
+	Natural Resources Conservation Service (NRCS)
+	Smithsonian Institution
+	National Museum of Natural History (NMNH)
+	These agencies signed a Memorandum of Understanding and have formed a Steering Committee that directs two technical work groups - the Database Work Group (DWG) and the Taxonomy Work Group (TWG). The DWG is responsible for the database design and overseeing development of the system to meet the requirements of the ITIS partners. The TWG is responsible for the quality and integrity of the database information. In addition to the database, the working groups have created "Taxonomic Workbench" software designed for easy entry and manipulation of taxonomic data.
+
+	Primary objectives of the TWG include the review of data prior to incorporation into the ITIS and the establishment of a process for periodic peer review to ensure data quality. The TWG has evaluated the taxonomic information priorities of the agencies and is locating data sources for the highest priority groups. Efforts to gather data are helping to identify gaps in taxonomic coverage in both scientific expertise and available information. The TWG hopes to promote collaboration among, and provide a point of focus for, taxonomists, scientific institutions, and taxonomic information users. 
+
+	For each scientific name, ITIS will include the authority (author and date), taxonomic rank, associated synonyms and vernacular names where available, a unique taxonomic serial number, data source information (publications, experts, etc.) and data quality indicators. Expert reviews and changes to taxonomic information in the database will be tracked. Geographic coverage will be worldwide with initial emphasis on North American taxa. The TWG is coordinating its efforts with several national and international biodiversity programs. 
+
+	ITIS will be a significant contribution to the scientific infrastructure that is fundamental to the description, conservation, and management of the nation's biodiversity. Use of the ITIS and the taxonomic serial numbers will facilitate sharing of biological information among researchers and cooperating agencies by providing a common framework for taxonomic data. Agencies that typically cannot afford to maintain taxonomic data will have access to high quality taxonomic information through ITIS. This project allows the coordination of efforts among federal agencies, thereby increasing productivity and saving resources.
+
+	Status reports on ITIS system development may be found in the What's New section. You can also contact Dr. Thomas M. Orrell, Acting Director, Integrated Taxonomic Information System (ITIS) c/o Smithsonian Institution P.O. Box 37012, NMNH W623 MRC-136, Washington, DC 20013-7012, phone: 202-633-2151, fax: 202-357-4122, orrellt@si.edu.</para>
+</abstract>
+<keywordSet><keyword>Taxonomic</keyword>
+<keyword>Synonyms</keyword>
+<keyword>Common Names</keyword>
+</keywordSet>
+<intellectualRights><para>ITIS data is in the public domain</para>
+</intellectualRights>
+<coverage><geographicCoverage><geographicDescription>North America</geographicDescription>
+<boundingCoordinates><westBoundingCoordinate>-90.0</westBoundingCoordinate>
+<eastBoundingCoordinate>90.0</eastBoundingCoordinate>
+<northBoundingCoordinate>45.0</northBoundingCoordinate>
+<southBoundingCoordinate>-45.0</southBoundingCoordinate>
+</boundingCoordinates>
+</geographicCoverage>
+</coverage>
+<contact id="1267117759852"><individualName><salutation>Dr.</salutation>
+<givenName>Tom</givenName>
+<surName>Orrell</surName>
+</individualName>
+<organizationName>Integrated Taxonomic Information System</organizationName>
+<positionName>Deputy Director</positionName>
+<electronicMailAddress>Orrellt@si.edu</electronicMailAddress>
+</contact>
+<project><title>The Catalogue of Life Partnership</title>
+<personnel><references>1267117759852</references>
+<role>Principal Investigator</role>
+</personnel>
+</project>
+</dataset>
+
+ <additionalMetadata>
+     <metadata>
+		<recordLinkUrl>http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&amp;search_value={ID}</recordLinkUrl>
+     </metadata>
+ </additionalMetadata>
+
+</eml:eml>

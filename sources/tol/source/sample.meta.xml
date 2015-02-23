@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<archive xmlns="http://rs.tdwg.org/dwc/text/">
+	<core encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
+		<files>
+			<location>tol_data.txt</location>
+		</files>
+		<id index="6" />
+		<field index="7" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
+		<field index="8" term="http://rs.tdwg.org/dwc/terms/parentNameUsageID"/>
+	</core>
+	<extension encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/SpeciesProfile">
+		<files>
+			<location>tol_data.txt</location>
+		</files>
+		<coreid index="6"/>
+		<field index="5" term="http://rs.gbif.org/terms/1.0/isExtinct"/>
+	</extension>
+</archive>

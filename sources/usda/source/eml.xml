@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<eml:eml packageId="david_remsen.21.1" system="knb" xmlns:eml="eml://ecoinformatics.org/eml-2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0 eml.xsd"> <access authSystem="knb" order="allowFirst"> <allow><principal>public</principal>
+<permission>read</permission>
+</allow>
+</access>
+ <dataset> <title>USDA Plants Annotated Checklist</title>
+ <creator id="1267121564342"> <organizationName>USDA NRCS National Plant Data Center</organizationName>
+<onlineUrl>http://npdc.usda.gov/</onlineUrl>
+</creator>
+ <creator id="1267121638890"><organizationName>USDA NRCS Information Technology Center</organizationName>
+<onlineUrl>http://www.itc.nrcs.usda.gov/</onlineUrl>
+</creator>
+<creator id="1267121669527"><organizationName>USDA National Information Technology Center</organizationName>
+<onlineUrl>http://www.ocio.usda.gov/nitc/index.html</onlineUrl>
+</creator>
+<associatedParty id="1264777976227"><individualName><salutation>Mr.</salutation>
+<givenName>David</givenName>
+<surName>Remsen</surName>
+</individualName>
+<organizationName>GBIF Secretariat</organizationName>
+<positionName>Programme Officer</positionName>
+<address><deliveryPoint>GBIF Secretariat</deliveryPoint>
+<deliveryPoint>Universitetsparken 15</deliveryPoint>
+<city>Copenhagen</city>
+<administrativeArea>&#216;</administrativeArea>
+<postalCode>2100</postalCode>
+<country>DK</country>
+</address>
+<phone phonetype="voice">+45 28751472</phone>
+<electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
+<onlineUrl>http://www.gbif.org</onlineUrl>
+<role>Metadata Provider</role>
+</associatedParty>
+<pubDate>{pubDate}</pubDate>
+<language>en</language>
+<abstract><para>The Complete PLANTS Checklist is nearly 7 MB and includes Symbol, Synonym Symbol, Scientific Name with Authors, National Common Name, and Family.</para>
+</abstract>
+<keywordSet><keyword>Taxonomy</keyword>
+<keyword>Synonyms</keyword>
+<keyword>Common Names</keyword>
+<keyword>Plants</keyword>
+</keywordSet>
+<intellectualRights><para>Data is in the public domain</para>
+</intellectualRights>
+<coverage><geographicCoverage><geographicDescription>United States</geographicDescription>
+<boundingCoordinates><westBoundingCoordinate>-168.0</westBoundingCoordinate>
+<eastBoundingCoordinate>-50.125</eastBoundingCoordinate>
+<northBoundingCoordinate>85.125</northBoundingCoordinate>
+<southBoundingCoordinate>16.875</southBoundingCoordinate>
+</boundingCoordinates>
+</geographicCoverage>
+</coverage>
+<contact id="1267121699068"><organizationName>Plants.USDA.GOV</organizationName>
+<electronicMailAddress>plants@plants.usda.gov</electronicMailAddress>
+</contact>
+</dataset>
+ </eml:eml>
+
+
+ <additionalMetadata>
+     <metadata>
+		<recordLinkUrl>http://plants.usda.gov/java/profile?symbol={ID}</recordLinkUrl>
+     </metadata>
+ </additionalMetadata>
+
+</eml:eml>
