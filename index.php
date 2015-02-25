@@ -11,8 +11,8 @@
 	 * - USDA - usda
 	 */
 
-	#error_reporting(E_ALL & ~E_NOTICE);
-	error_reporting(E_ALL);
+	error_reporting(E_ALL & ~E_NOTICE);
+	#error_reporting(E_ALL);
 
 	set_time_limit( 0 );
 	ini_set('memory_limit', '30000M');
