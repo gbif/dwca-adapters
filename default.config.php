@@ -12,16 +12,7 @@ $itis = array(
 	, "database" => 'itis'
 	, "username" => ''
 	, "pass" => ''
-	, "remote_file" => 'http://www.itis.gov/downloads/itisMySQLBulk.zip' # Full URL
-);
-
-#Used to connect to Mysql COL database
-$col = array(
-	  "server" => 'localhost'
-	, "database" => 'col2009'
-	, "username" => ''
-	, "pass" => ''
-	, "port" => 3000	
+	, "remote_file" => 'http://www.itis.gov/downloads/itisMySQLBulk.zip' # Full URL to source dump
 );
 
 ?>
