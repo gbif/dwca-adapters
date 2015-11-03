@@ -18,7 +18,7 @@ which can be indexed by GBIF ChecklistBank. The following sources are supported:
 - MySQL (Optional for ITIS source)
 
 ### Configuration:
-1) Copy the default.config.php to config.php and edit the information.
+1) Copy the ```default.config.php``` to ```config.php``` and edit the information.
 
 ### MySql Setup:
 To be able to use ITIS you must be running a mysql database (ITIS is distributed as a mysql dump).
@@ -29,16 +29,16 @@ In order to use the itis adapter you need to manually setup a new itis database 
 3. Edit the config.php file and add in the db connection information.
 4. Download and extract the latest ITIS mysql bulk dump from 
 5. Run the CreateDB.sql file to build the table structure in your new database:
-   mysql -uroot -p itis < CreateDB.sql
+   ```mysql -uroot -p itis < CreateDB.sql```
 
 
 # Usage
 
 1. cd into root folder of this project
-2. execute "php index.php {source}"
+2. execute ```php index.php {source}```
 3. generated dwc archives will be in the respective sources subfolder
 
 
 ### GBIF installation
-The dwca adapters are installed on xxx.gbif.org where each source is executed by cron once a week.
+The dwca adapters are installed on rs.gbif.org where each source is executed by cron once a week.
 The generated dwc archives are then copied to the apache server hosting http://rs.gbif.org/datasets/ which contains the files registered in GBIF.
