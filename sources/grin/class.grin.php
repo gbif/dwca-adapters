@@ -17,15 +17,6 @@
 
 		private function unzip( $filename ) {
 			unzip( $this->source_path . $filename, $this->source_path ); 
-/*			
-			$zip = new ZipArchive;
-			$res = $zip->open($this->source_path . $filename);
-			if ($res === TRUE) {
-				$zip->extractTo($this->source_path);
-				$zip->close();
-			}
-			unlink($this->source_path . $filename);
-*/			
 		}
 		
 		public function downloadData() {
@@ -69,7 +60,6 @@
 				}
 			}
 			fclose($fp);
-//			unlink($this->source_path . $source);
 		}
 		
 		public function createCSV() {		
