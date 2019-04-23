@@ -30,7 +30,7 @@ which can be indexed by GBIF ChecklistBank. The following sources are supported:
 git clean -f -X
 docker build -t dwca-adapters .
 mkdir output
-docker run -it --rm -v $PWD/output:/dwca-adapters/output mb.gbif.org:5000/dwca-adapters
+docker run -it --rm --user $(id -u):$(id -g) -v $PWD/output:/dwca-adapters/output mb.gbif.org:5000/dwca-adapters
 ```
 
 The Makefile can be used to build and deploy the container.
