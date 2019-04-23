@@ -179,7 +179,7 @@ class xml2json {
 				$callerProvidedSimpleXmlElementObject = $simpleXmlElementObject;
 			}
 		} // End of if ($recursionDepth == 0) {		
-				
+
 		if (get_class($simpleXmlElementObject) == SIMPLE_XML_ELEMENT_PHP_CLASS) {
 			// Get a copy of the simpleXmlElementObject
 			$copyOfsimpleXmlElementObject = $simpleXmlElementObject;
