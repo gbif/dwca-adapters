@@ -18,9 +18,10 @@
 
 		function __construct() {
 			$this->source_path = BASE_PATH . "sources/usda/source/";
-			$this->output_path = BASE_PATH . "sources/usda/output/";
+			$this->output_path = BASE_PATH . "output/usda/";
 			$this->taxa = array();
-   	}
+			mkdir($this->output_path);
+		}
 		
 		public function downloadData() {
 			$fp = fopen( $this->source_path . $this->filename, 'w');

@@ -18,7 +18,8 @@ class tol {
 
 	function __construct() {
 		$this->source_path = BASE_PATH . "sources/tol/source/";
-		$this->output_path = BASE_PATH . "sources/tol/output/";
+		$this->output_path = BASE_PATH . "output/tol/";
+		mkdir($this->output_path);
 	}
 
 	public function downloadData() {

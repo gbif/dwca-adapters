@@ -1,4 +1,5 @@
-# DwC-Adapters
+# Darwin Core Archive Adapters
+
 This PHP project provides converters for several checklist datasets from their native, proprietary and public format to a standard Darwin Core Archive
 which can be indexed by GBIF ChecklistBank. The following sources are supported:
 
@@ -9,32 +10,30 @@ which can be indexed by GBIF ChecklistBank. The following sources are supported:
 
 *The source code was created by Michael Giddens (mikegiddens@silverbiology.com), contracted by GBIF in 2010.*
 
-
 # Installation
 
-### Requirements:
+## Requirements
 - PHP 5.2.x+
 
-### Configuration:
+## Configuration
 1) Copy the ```default.config.php``` to ```config.php``` and edit the information.
 
 # Usage
 
 1. cd into root folder of this project
 2. execute ```php index.php {source}```
-3. generated dwc archives will be in the respective sources subfolder
+3. generated DWC archives will be in the output subfolder
 
+### GBIF installation + Docker use (2019)
 
-### GBIF installation
-The dwca adapters are installed on rs.gbif.org where each source is executed by cron once a week.
-The generated dwc archives are then copied to the apache server hosting http://rs.gbif.org/datasets/ which contains the files registered in GBIF.
-
-### Docker use (2019)
-
-This is a quick hack to get something working.  It needs to be moved to a proper build server.
-
-```
+```shell
+git clean -f -X
 docker build -t dwca-adapters .
-docker run -it --rm dwca-adapters
-$ php index.php ncbi
+mkdir output
+docker run -it --rm -v $PWD/output:/dwca-adapters/output mb.gbif.org:5000/dwca-adapters
 ```
+
+The Makefile can be used to build and deploy the container.
+
+The adapters are installed on the [build server](https://builds.gbif.org/job/dwca-adapters/), which runs the jobs weekly.
+The finished archives are copied to http://rs.gbif.org/datasets/.

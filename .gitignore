@@ -1,3 +1,6 @@
-.idea
-config.php
-
+nohup.out
+*.sql
+*.csv
+*.dbf
+*.zip
+output

@@ -6,7 +6,7 @@
 
 		public $source_name = 'family.dbf';
 		public $source_path = 'sources/grin/source/';
-		public $output_path = 'sources/grin/output/';
+		public $output_path = 'output/grin/';
 		public $filename = 'grin_taxa.txt';
 		public $vernacular_filename = 'grin_vernacular.txt';
 		public $meta_filename = 'meta.xml';
@@ -14,6 +14,10 @@
 		public $zip_filename = 'grin_archive.zip';
 		public $delimiter = "\t";
 		public $cr = "\n";		
+
+		function __construct() {
+			mkdir($this->output_path);
+		}
 
 		private function unzip( $filename ) {
 			unzip( $this->source_path . $filename, $this->source_path ); 

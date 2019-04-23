@@ -17,8 +17,9 @@
 
 		function __construct() {
 			$this->source_path = BASE_PATH . "sources/ncbi/source/";
-			$this->output_path = BASE_PATH . "sources/ncbi/output/";
-   	}
+			$this->output_path = BASE_PATH . "output/ncbi/";
+			mkdir($this->output_path);
+		}
 
 		public function downloadData() {
 			
