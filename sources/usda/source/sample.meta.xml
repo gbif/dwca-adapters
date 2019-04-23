@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <archive xmlns="http://rs.tdwg.org/dwc/text/">
-	<core encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
+	<core encoding="utf-8" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Taxon">
 		<files>
 			<location>species.txt</location>
 		</files>
@@ -13,7 +13,7 @@
 		<field index="6" term="http://rs.tdwg.org/dwc/terms/taxonomicStatus"/>
 	</core>
 
-	<extension encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/VernacularName">
+	<extension encoding="utf-8" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/VernacularName">
 		<files>
 			<location>vernacular.txt</location>
 		</files>
@@ -23,7 +23,7 @@
 		<field index="3" term="http://purl.org/dc/terms/language"/>
 	</extension>
 
-	<extension encoding="windows-1252" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/Distribution">
+	<extension encoding="utf-8" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy='' ignoreHeaderLines="1" rowType="http://rs.gbif.org/terms/1.0/Distribution">
 		<files>
 			<location>geography.txt</location>
 		</files>
