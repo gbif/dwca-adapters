@@ -22,26 +22,26 @@
 		public function downloadData() {
 
 			$fp = fopen( $this->source_path . 'common.zip', 'w');
-			fwrite($fp, file_get_contents('http://www.ars-grin.gov/misc/tax/common.zip') );
-			fclose($fp);			
+			fwrite($fp, file_get_contents('https://www.ars-grin.gov/misc/tax/common.zip') );
+			fclose($fp);
 			$this->unzip('common.zip');
 
 			$this->transform('common.dbf', 'common.csv');
 
 			$fp = fopen( $this->source_path . 'family.zip', 'w');
-			fwrite($fp, file_get_contents('http://www.ars-grin.gov/misc/tax/family.zip') );
+			fwrite($fp, file_get_contents('https://www.ars-grin.gov/misc/tax/family.zip') );
 			fclose($fp);
 			$this->unzip('family.zip');
 			$this->transform('family.dbf', 'family.csv');
 			
 			$fp = fopen( $this->source_path . 'genus.zip', 'w');
-			fwrite($fp, file_get_contents('http://www.ars-grin.gov/misc/tax/genus.zip') );
+			fwrite($fp, file_get_contents('https://www.ars-grin.gov/misc/tax/genus.zip') );
 			fclose($fp);
 			$this->unzip('genus.zip');
 			$this->transform('genus.dbf', 'genus.csv');
 
 			$fp = fopen( $this->source_path . 'species.zip', 'w');
-			fwrite($fp, file_get_contents('http://www.ars-grin.gov/misc/tax/species.zip') );
+			fwrite($fp, file_get_contents('https://www.ars-grin.gov/misc/tax/species.zip') );
 			fclose($fp);
 			$this->unzip('species.zip');			
 			$this->transform('species.dbf', 'species.csv');
@@ -211,7 +211,7 @@
 			$tpl = str_replace("{postalCode}", '', $tpl);
 			$tpl = str_replace("{country}", 'US', $tpl);
 			$tpl = str_replace("{electronicMailAddress}", '', $tpl);
-			$tpl = str_replace("{onlineUrl}", 'http://www.ars-grin.gov/', $tpl);
+			$tpl = str_replace("{onlineUrl}", 'https://www.ars-grin.gov/', $tpl);
 			$tpl = str_replace("{logoUrl}", '', $tpl);
 			$tpl = str_replace("{pubDate}", date("Y/m/d"), $tpl);
 			$tpl = str_replace("{abstract}", '', $tpl);

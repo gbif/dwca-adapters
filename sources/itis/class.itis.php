@@ -218,7 +218,7 @@
 			$tpl = str_replace("{postalCode}", '' , $tpl);
 			$tpl = str_replace("{country}", '' , $tpl);
 			$tpl = str_replace("{electronicMailAddress}", '' , $tpl);
-			$tpl = str_replace("{onlineUrl}", 'http://www.itis.gov/' , $tpl);
+			$tpl = str_replace("{onlineUrl}", 'https://www.itis.gov/' , $tpl);
 			$tpl = str_replace("{logoUrl}", '' , $tpl);
 			$tpl = str_replace("{pubDate}", date("Y/m/d") , $tpl);
 			$tpl = str_replace("{abstract}", '' , $tpl);

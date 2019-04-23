@@ -23,7 +23,7 @@
 		public function downloadData() {
 			
 			$fp = fopen( $this->source_path . $this->archive_file, 'w');
-			fwrite($fp, file_get_contents('ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdmp.zip') );
+			fwrite($fp, file_get_contents('https://ftp.ncbi.nih.gov/pub/taxonomy/taxdmp.zip') );
 			fclose($fp);
 
 #			system( sprintf("unzip %s %s", $this->source_path . $this->archive_file, $this->source_path) );
@@ -131,7 +131,7 @@
 			$tpl = str_replace("{postalCode}", '' , $tpl);
 			$tpl = str_replace("{country}", 'USA' , $tpl);
 			$tpl = str_replace("{electronicMailAddress}", '' , $tpl);
-			$tpl = str_replace("{onlineUrl}", 'http://www.ncbi.nlm.nih.gov/' , $tpl);
+			$tpl = str_replace("{onlineUrl}", 'https://www.ncbi.nlm.nih.gov/' , $tpl);
 			$tpl = str_replace("{logoUrl}", '' , $tpl);
 			$tpl = str_replace("{pubDate}", date("Y/m/d") , $tpl);
 			$tpl = str_replace("{abstract}", '' , $tpl);

@@ -7,7 +7,7 @@
  <dataset> <title>NCBI Taxonomy</title>
  <creator id="1267120764163"> <organizationName>The National Center for Biotechnology Information</organizationName>
 <electronicMailAddress>info@ncbi.nlm.nih.gov</electronicMailAddress>
-<onlineUrl>http://www.ncbi.nlm.nih.gov/Taxonomy/</onlineUrl>
+<onlineUrl>https://www.ncbi.nlm.nih.gov/Taxonomy/</onlineUrl>
 </creator>
  <associatedParty id="1264777976227"><individualName><salutation>Mr.</salutation>
 <givenName>David</givenName>
@@ -24,7 +24,7 @@
 </address>
 <phone phonetype="voice">+45 28751472</phone>
 <electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
-<onlineUrl>http://www.gbif.org</onlineUrl>
+<onlineUrl>https://www.gbif.org</onlineUrl>
 <role>Metadata Provider</role>
 </associatedParty>
 <pubDate>{pubDate}</pubDate>

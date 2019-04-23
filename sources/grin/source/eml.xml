@@ -26,7 +26,7 @@
 </address>
 <phone phonetype="voice">+45 28751472</phone>
 <electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
-<onlineUrl>http://www.gbif.org</onlineUrl>
+<onlineUrl>https://www.gbif.org</onlineUrl>
 <role>Metadata Provider</role>
 </associatedParty>
 <pubDate>{pubDate}</pubDate>

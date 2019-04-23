@@ -17,7 +17,7 @@
 <country>20013-7012</country>
 </address>
 <phone phonetype="voice">202-633-2151</phone>
-<onlineUrl>http://www.itis.gov</onlineUrl>
+<onlineUrl>https://www.itis.gov</onlineUrl>
 </creator>
  <associatedParty id="1264777976227"><individualName><salutation>Mr.</salutation>
 <givenName>David</givenName>
@@ -34,7 +34,7 @@
 </address>
 <phone phonetype="voice">+45 28751472</phone>
 <electronicMailAddress>dremsen@gbif.org</electronicMailAddress>
-<onlineUrl>http://www.gbif.org</onlineUrl>
+<onlineUrl>https://www.gbif.org</onlineUrl>
 <role>Metadata Provider</role>
 </associatedParty>
 <pubDate>{pubDate}</pubDate>
@@ -99,7 +99,7 @@
 
  <additionalMetadata>
      <metadata>
-		<recordLinkUrl>http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&amp;search_value={ID}</recordLinkUrl>
+		<recordLinkUrl>https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&amp;search_value={ID}</recordLinkUrl>
      </metadata>
  </additionalMetadata>
 

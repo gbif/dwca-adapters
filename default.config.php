@@ -12,7 +12,7 @@ $itis = array(
 	, "database" => 'itis'
 	, "username" => ''
 	, "pass" => ''
-	, "remote_file" => 'http://www.itis.gov/downloads/itisMySQLBulk.zip' # Full URL to source dump
+	, "remote_file" => 'https://www.itis.gov/downloads/itisMySQLBulk.zip' # Full URL to source dump
 );
 
 ?>
