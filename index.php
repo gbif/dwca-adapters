@@ -25,37 +25,38 @@
 		print("Please supply the list of archives to generate as arguments: all grin ncbi tol usda");
 	}
 
-	$success = false;
+	$failures = 0;
 
 	foreach( $argv as $source ) {
 	 	switch( strtolower($source) ) {
 
 			case 'all':
-				$success = buildUSDA();
-				$success = buildTOL();
-				$success = buildGRIN();
-				$success = buildNCBI();
+				$failures += buildUSDA();
+				$failures += buildTOL();
+				$failures += buildGRIN();
+				$failures += buildNCBI();
 				break;
 
 			case 'usda':
-				$success = buildUSDA();
+				$failures = buildUSDA();
 				break;
 
 			case 'tol':
-				$success = buildTOL();
+				$failures = buildTOL();
 				break;
 
 			case 'grin':
-				$success = buildGRIN();
+				$failures = buildGRIN();
 				break;
 
 			case 'ncbi':
-				$success = buildNCBI();
+				$failures = buildNCBI();
 				break;
 		}
 	}
 
-	print json_encode( array( "success" => $success ) );
+	print json_encode( array( "failures" => $failures ) );
+	exit($failures);
 
 	/*
 		Operations:
@@ -71,10 +72,10 @@
 			$source->createEml();
 			$source->createMeta();
 			$source->zipArchive();
-			return(true);
+			return(0);
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			return(false);
+			return(1);
 		}
 	}
 
@@ -88,10 +89,10 @@
 			$source->createEml();
 			$source->createMeta();
 			$source->zipArchive();
-			return(true);
+			return(0);
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			return(false);
+			return(1);
 		}
 	}
 
@@ -105,10 +106,10 @@
 			$source->createEml();
 			$source->createMeta();
 			$source->zipArchive();
-			return(true);
+			return(0);
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			return(false);
+			return(1);
 		}
 	}
 
@@ -123,10 +124,10 @@
 			$source->createEml();
 			$source->createMeta();
 			$source->zipArchive();
-			return(true);
+			return(0);
 		} catch (Exception $e) {
 			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			return(false);
+			return(1);
 		}
 	}
 
