@@ -1,6 +1,5 @@
-
 DOCKER_IMAGE_NAME ?= dwca-adapters
-DOCKER_IMAGE_NAME_TO_TEST ?= mb.gbif.org:5000/dwca-adapters
+DOCKER_IMAGE_NAME_TO_TEST ?= docker.gbif.org/dwca-adapters
 
 all: build deploy
 

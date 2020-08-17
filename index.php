@@ -61,49 +61,73 @@
 		Operations:
 	*/
 	function buildUSDA() {
+		echo "Building USDA";
 		require_once( BASE_PATH . 'sources/usda/class.usda.php' );
-		$source = new usda();
-		$source->downloadData();
-		$source->createHigherTaxa();
-		$source->createCSV();
-		$source->createEml();
-		$source->createMeta();
-		$source->zipArchive();
-		return(true);
+		try {
+			$source = new usda();
+			$source->downloadData();
+			$source->createHigherTaxa();
+			$source->createCSV();
+			$source->createEml();
+			$source->createMeta();
+			$source->zipArchive();
+			return(true);
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return(false);
+		}
 	}
 
 	function buildTOL() {
+		echo "Building TOL";
 		require_once( BASE_PATH . 'sources/tol/class.tol.php' );
-		$source = new tol();
-		$source->downloadData();
-		$source->createCSV();
-		$source->createEml();
-		$source->createMeta();
-		$source->zipArchive();
-		return(true);
+		try {
+			$source = new tol();
+			$source->downloadData();
+			$source->createCSV();
+			$source->createEml();
+			$source->createMeta();
+			$source->zipArchive();
+			return(true);
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return(false);
+		}
 	}
 
 	function buildGRIN() {
+		echo "Building GRIN";
+		try {
 		require_once( BASE_PATH . 'sources/grin/class.grin.php' );
-		$source = new grin();
-		$source->downloadData();
-		$source->createCSV();
-		$source->createEml();
-		$source->createMeta();
-		$source->zipArchive();
-		return(true);
+			$source = new grin();
+			$source->downloadData();
+			$source->createCSV();
+			$source->createEml();
+			$source->createMeta();
+			$source->zipArchive();
+			return(true);
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return(false);
+		}
 	}
 
 	function buildNCBI() {
+		echo "Building NCBI";
 		require_once( BASE_PATH . 'sources/ncbi/class.ncbi.php');
-		$source = new ncbi;
-		$source->downloadData();
-		$source->memHigherTaxa();
-		$source->createCSV();
-		$source->createEml();
-		$source->createMeta();
-		$source->zipArchive();
-		return(true);
+		try {
+			$source = new ncbi;
+			$source->downloadData();
+			$source->memHigherTaxa();
+			$source->createCSV();
+			$source->createEml();
+			$source->createMeta();
+			$source->zipArchive();
+			return(true);
+		} catch (Exception $e) {
+			echo 'Caught exception: ',  $e->getMessage(), "\n";
+			return(false);
+		}
 	}
 
 ?>

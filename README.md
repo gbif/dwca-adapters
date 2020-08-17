@@ -27,13 +27,11 @@ which can be indexed by GBIF ChecklistBank. The following sources are supported:
 ### GBIF installation + Docker use (2019)
 
 ```shell
-git clean -f -X
-docker build -t dwca-adapters .
+make
+
 mkdir output
-docker run -it --rm --user $(id -u):$(id -g) -v $PWD/output:/dwca-adapters/output mb.gbif.org:5000/dwca-adapters
+docker run -it --rm --user $(id -u):$(id -g) -v $PWD/output:/dwca-adapters/output docker.gbif.org/dwca-adapters
 ```
 
-The Makefile can be used to build and deploy the container.
-
 The adapters are installed on the [build server](https://builds.gbif.org/job/dwca-adapters/), which runs the jobs weekly.
-The finished archives are copied to http://rs.gbif.org/datasets/.
+The finished archives are copied to https://hosted-datasets.gbif.org/datasets/.

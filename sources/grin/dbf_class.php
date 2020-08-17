@@ -59,22 +59,22 @@ class dbf_class {
 
     function dbf_class($filename) {
         if ( !file_exists($filename)) {
-            echo 'Not a valid DBF file !!!'; exit;
+            throw new Exception('Not a valid DBF file !!!');
         }
         $tail=substr($filename,-4);
         if (strcasecmp($tail, '.dbf')!=0) {
-            echo 'Not a valid DBF file !!!'; exit;
+            throw new Exception('Not a valid DBF file !!!');
         }
 				
         //Read the File
         $handle = fopen($filename, "r");
-        if (!$handle) { echo "Cannot read DBF file"; exit; }
+        if (!$handle) { throw new Exception("Cannot read DBF file"); }
         $filesize = filesize($filename);
         $this->_raw = fread ($handle, $filesize);
         fclose ($handle);
         //Make sure that we indeed have a dbf file...
         if(!(ord($this->_raw[0]) == 3 || ord($this->_raw[0]) == 131) && ord($this->_raw[$filesize]) != 26) {
-            echo 'Not a valid DBF file !!!'; exit;
+            throw new Exception('Not a valid DBF file !!!');
         }
         // 3= file without DBT memo file; 131 ($83)= file with a DBT.
         $arrHeaderHex = array();
@@ -113,7 +113,7 @@ class dbf_class {
             }
             $memoname = substr($filename,0,strlen($filename)-1).$tail;
             $handle = fopen($memoname, "r");
-            if (!$handle) { echo "Cannot read DBT file"; exit; }
+            if (!$handle) { throw new Exception("Cannot read DBT file"); }
             $filesize = filesize($memoname);
             $this->_memos = fread ($handle, $filesize);
             fclose ($handle);
