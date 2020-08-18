@@ -5,7 +5,6 @@
 	 * Adapters
 	 * This will generate DwC Archives for the following sources:
 	 * GRIN - grin
-	 * NCBI - ncbi
 	 * Tree of Life - tol
 	 * USDA - usda
 	 *
@@ -22,7 +21,7 @@
 	require_once('classes/zip/archive.php');
 
 	if ($argc < 1) {
-		print("Please supply the list of archives to generate as arguments: all grin ncbi tol usda");
+		print("Please supply the list of archives to generate as arguments: all grin tol usda");
 	}
 
 	$failures = 0;
@@ -34,7 +33,6 @@
 				$failures += buildUSDA();
 				$failures += buildTOL();
 				$failures += buildGRIN();
-				$failures += buildNCBI();
 				break;
 
 			case 'usda':
@@ -47,10 +45,6 @@
 
 			case 'grin':
 				$failures = buildGRIN();
-				break;
-
-			case 'ncbi':
-				$failures = buildNCBI();
 				break;
 		}
 	}
@@ -98,28 +92,12 @@
 
 	function buildGRIN() {
 		echo "Building GRIN";
-		try {
+		echo "GRIN build disabled as the source archive has gone";
+		return(0);
 		require_once( BASE_PATH . 'sources/grin/class.grin.php' );
+		try {
 			$source = new grin();
 			$source->downloadData();
-			$source->createCSV();
-			$source->createEml();
-			$source->createMeta();
-			$source->zipArchive();
-			return(0);
-		} catch (Exception $e) {
-			echo 'Caught exception: ',  $e->getMessage(), "\n";
-			return(1);
-		}
-	}
-
-	function buildNCBI() {
-		echo "Building NCBI";
-		require_once( BASE_PATH . 'sources/ncbi/class.ncbi.php');
-		try {
-			$source = new ncbi;
-			$source->downloadData();
-			$source->memHigherTaxa();
 			$source->createCSV();
 			$source->createEml();
 			$source->createMeta();
